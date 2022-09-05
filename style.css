@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(187, 117, 117);
+}
+
+.start-btn,
+.info-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+/* start quiz button styling */
+.start-btn button{ 
+    display: none;
+    padding: 10px 30px;
+    color: rgb(187, 117, 117);
+    font-size: 25px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+
+}
+/* styling info box */
+.info-box{
+    background: white;
+    width: 540px;
+    border-radius: 5px;
+}
+.info-box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0px 35px;
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+.info-box .info-list{
+    height: 200px;
+    width: 100%;
+    padding: 15px 35px;
+    
+}
+.info-box .info-list .info{
+  margin: 5px 0px;
+
+}
+
+.info-box .info-list .info span{
+    font-weight: bold;
+    color:red
+}
+
+.info-box .buttons{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 35px;
+    border-top: 1px solid lightgray;
+
+
+    
+}
+.info-box .buttons button{
+    margin: 0px 5px;
+    height: 40px;
+    width: 100px;
+    /* background:  rgb(187, 117, 117); */
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+   
+}
+
+.buttons button.exit{ 
+    color:  rgb(187, 117, 117);
+}
+
+.buttons button.exit:hover{
+    background-color: rgb(187, 117, 117);
+    color: white;
+}
+ 
+.buttons button.continue:hover{
+    background-color:  rgb(187, 117, 117);
+    color: white; 
+    
+}
+
+.buttons button.continue:hover{
+ background: rgb(187, 117, 117);
+}
