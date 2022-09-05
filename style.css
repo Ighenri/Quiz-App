@@ -11,7 +11,8 @@ body{
 }
 
 .start-btn,
-.info-box{
+.info-box,
+.quiz-box{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,6 +36,7 @@ body{
 }
 /* styling info box */
 .info-box{
+    display: none;
     background: white;
     width: 540px;
     border-radius: 5px;
@@ -88,12 +90,13 @@ body{
     font-weight: 600;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease-in-out;
    
 }
 
 .buttons button.exit{ 
     color:  rgb(187, 117, 117);
+    
 }
 
 .buttons button.exit:hover{
@@ -101,7 +104,7 @@ body{
     color: white;
 }
  
-.buttons button.continue:hover{
+.buttons button.continue{
     background-color:  rgb(187, 117, 117);
     color: white; 
     
@@ -110,3 +113,64 @@ body{
 .buttons button.continue:hover{
  background: rgb(187, 117, 117);
 }
+
+.quiz-box{
+    background: white;
+    width: 550px;
+    border-radius: 5px;
+}
+
+.quiz-box header{
+    display: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0px 30px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px  rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.quiz-box header .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz-box header .time{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 145px;
+    height: 45px;
+    background: rgb(219, 164, 164);
+    border: 1px solid rgb(219, 164, 164);
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+.quiz-box header .time .time-text{
+    font-weight: 600;
+    font-size: 17px;
+    user-select: none;
+}
+
+.quiz-box header .time .time-sec{
+    font-size: 20px;
+    font-weight: 600;
+    background: brown;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    line-height: 30px;
+    border: 1px solid brown;
+    user-select: none;
+}
+
+.quiz-box section{
+    padding: 25px 30px 20px 30px;
+    background: white;
+} 
