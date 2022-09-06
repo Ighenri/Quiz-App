@@ -22,7 +22,6 @@ body{
 
 /* start quiz button styling */
 .start-btn button{ 
-    display: none;
     padding: 10px 30px;
     color: rgb(187, 117, 117);
     font-size: 25px;
@@ -115,17 +114,18 @@ body{
 }
 
 .quiz-box{
+    display: none;
     background: white;
     width: 550px;
     border-radius: 5px;
 }
 
 .quiz-box header{
-    display: relative;
+    display: relative; 
     z-index: 99;
     height: 70px;
     padding: 0px 30px;
-    background-color: white;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     border-radius: 5px 5px 0 0;
@@ -138,7 +138,7 @@ body{
     font-weight: 600;
 }
 
-.quiz-box header .time{
+.quiz-box header .timer{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -150,13 +150,13 @@ body{
     padding: 0 8px;
 }
 
-.quiz-box header .time .time-text{
+.quiz-box header .timer .time-text{
     font-weight: 600;
     font-size: 17px;
     user-select: none;
 }
 
-.quiz-box header .time .time-sec{
+.quiz-box header .timer .time-sec{
     font-size: 20px;
     font-weight: 600;
     background: brown;
@@ -174,3 +174,102 @@ body{
     padding: 25px 30px 20px 30px;
     background: white;
 } 
+
+.quiz-box section .que-text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.quiz-box section .option-list{
+    padding: 20px 0px;
+    display: block;
+}
+
+section .option-list .option{
+    background: rgb(247, 244, 244);
+    border: 1px solid rgb(219, 164, 164);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section .option-list .option:hover{
+    background-color: rgb(219, 164, 164);
+    border-color: rgb(219, 164, 164);
+}
+
+.option-list .option:last-child{
+    margin-bottom: 0px;
+}
+
+.option-list .option .icon{
+    height: 20px;
+    width: 20px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    pointer-events: none;
+    font-size: 13px;
+}
+
+.option-list .option .icon.tick{
+   border-color:  rgb(84, 173, 84);
+   color: rgb(84, 173, 84);
+   background: white;
+}
+
+.option-list .option .icon.xmark{
+    border-color: rgb(151, 44, 44);
+    color: rgb(151, 44, 44);
+    background: white
+}
+
+
+.quiz-box footer{
+    height: 60px ;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz-box footer .total-que span{
+    display: flex;
+    user-select: none;
+}
+
+footer .total-que span p{
+    font-weight: 600;
+    padding: 0 5px;
+} 
+
+.total-que span p:first-child{
+    padding-left: 0px;
+}
+
+footer .next-btn{
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background: rgb(219, 164, 164);
+    border-radius: 5px;
+    border:  1px solid rgb(219, 164, 164);
+    
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer .next-btn:hover{
+    background: rgb(219, 164, 164);
+}
