@@ -12,11 +12,13 @@ body{
 
 .start-btn,
 .info-box,
-.quiz-box{
+.quiz-box,
+.result-box{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 
@@ -35,7 +37,8 @@ body{
 }
 /* styling info box */
 .info-box{
-    display: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
     background: white;
     width: 540px;
     border-radius: 5px;
@@ -46,7 +49,7 @@ body{
     border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
-    padding: 0px 35px;
+    padding: 0px 30px;
     font-size: 20px;
     font-weight: 600;
 
@@ -114,7 +117,8 @@ body{
 }
 
 .quiz-box{
-    display: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
     background: white;
     width: 550px;
     border-radius: 5px;
@@ -265,11 +269,91 @@ footer .next-btn{
     background: rgb(219, 164, 164);
     border-radius: 5px;
     border:  1px solid rgb(219, 164, 164);
-    
     font-weight: 600;
     cursor: pointer;
 }
 
 footer .next-btn:hover{
     background: rgb(219, 164, 164);
+}
+
+.result-box{
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px 30px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+
+}
+
+.result-box .icon{
+    font-size: 100px;
+    color:rgb(180, 132, 132);
+    margin-bottom: 10px;
+}
+
+
+.result-box .complete-text{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.result-box .score-text{
+    font-size: 20px;
+    font-weight: 500
+}
+
+.result-box .score-text span{
+    display: flex;
+   font-size: 18px;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.score-text span p{
+    padding: 0px 4px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.result-box .buttons{
+    display: flex;
+    margin: 20px 0px;
+ 
+
+}
+
+.result-box .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid rgb(219, 164, 164);
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  all 0.3 ease;
+}
+
+.result-box .buttons .restart{
+    background:  rgb(219, 164, 164);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+
+.result-box .buttons .quit{
+    color:  rgb(219, 164, 164);
+    background: white;
+    font-weight: 600;
+    font-size: 14px;
 }
