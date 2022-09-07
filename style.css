@@ -22,6 +22,13 @@ body{
   
 }
 
+.info-box.activeInfo{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 /* start quiz button styling */
 .start-btn button{ 
     padding: 10px 30px;
@@ -38,6 +45,7 @@ body{
 /* styling info box */
 .info-box{
     opacity: 0;
+    pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
     background: white;
     width: 540px;
@@ -119,6 +127,7 @@ body{
 .quiz-box{
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
     background: white;
     width: 550px;
     border-radius: 5px;

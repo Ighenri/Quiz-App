@@ -6,5 +6,10 @@ const continue_btn = info_box.querySelector(".buttons .continue");
 
 //if start quiz button clicked
 start_btn.onclick = ()=>{
-    info_box.classList.add("");
+    info_box.classList.add("activeInfo");   //show the info box
+}
+
+//if Exit button clicked
+exit_btn.onclick = ()=>{
+    info_box.classList.remove("activeInfo"); //hide the info box
 }
