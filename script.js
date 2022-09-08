@@ -106,6 +106,15 @@ function startTimer(time){
     function timer(){
         timeCount.textContent = time;
         time--;
+        if(time < 9){
+            let addZero = timeCount.textContent;
+            timeCount.textContent = "0" + addZero  // this adds zero once the count down reached 9
+        }
+
+        if(time < 0){
+            clearInterval(counter);
+            timeCount.textContent = "00"  // this returns the count back to zero immediately countdown gets below zero
+        }
     }
 }
 
