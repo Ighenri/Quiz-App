@@ -215,8 +215,8 @@ section .option-list .option{
 }
 
 section .option-list .option:hover{
-    background-color: rgb(219, 164, 164);
-    border-color: rgb(219, 164, 164);
+    background-color: rgb(245, 202, 202);
+    border-color: rgb(233, 212, 212);
 }
 
 .option-list .option:last-child{
