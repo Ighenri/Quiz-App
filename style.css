@@ -243,9 +243,20 @@ section .option-list .option:hover{
 .option-list .option .icon.xmark{
     border-color: rgb(151, 44, 44);
     color: rgb(151, 44, 44);
-    background: white
+    background: white;
 }
 
+.option-list .option.correct{
+    border-color:  rgb(84, 173, 84);
+   color: rgb(84, 173, 84);
+   background: white;
+}
+
+.option-list .option.incorrect{
+    border-color: rgb(151, 44, 44);
+    color: rgb(151, 44, 44);
+    background: white;
+}
 
 .quiz-box footer{
     height: 60px ;

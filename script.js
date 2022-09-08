@@ -52,7 +52,28 @@ function showQuestions(index){
                      + '<div class="option">'+ questions[index].options[3] +'<span></span></div>';
     que_text.innerHTML = que_tag;
     option_list.innerHTML = option_tag;
+    const option = option_list.querySelectorAll(".option");
+    for (let i = 0; i < option.length; i++) {
+        option[i].setAttribute("onclick", "optionSelected(this)");
+    }
 }
+
+function optionSelected(answer){
+    let userAns = answer.textContent;
+    let correctAns = questions[que_count].answer;
+    if (userAns == correctAns){
+        answer.classList.add("correct");
+        console.log("Answer is correct");
+    }
+    else{
+        answer.classList.add("incorrect");
+        console.log("Answer is wrong");
+    }
+   
+}
+
+
+
 
 function queCounter(index){
     const bottom_ques_counter = quiz_box.querySelector(".total-que");
