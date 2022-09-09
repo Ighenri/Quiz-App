@@ -168,7 +168,7 @@ let questions = [
     },
 
     {
-        numb: 14,
+        numb: 15,
         question: "Which of these is a JS syntax",
         answer:  "const",
         options: [
@@ -180,7 +180,7 @@ let questions = [
     },
 
     {
-        numb: 15,
+        numb: 16,
         question: "Which of these has semantic meaning",
         answer:  "section",
         options: [
@@ -190,6 +190,54 @@ let questions = [
             "section"
     ]
     },
+    
+    {
+        numb: 17,
+        question: " What is the correct HTML element for inserting a line break?",
+        answer: "br",
+        options: [
+          "break",
+          "lb",
+          "br",
+          "b",
+    ]
+    },
 
+    {
+        numb: 18,
+        question: "One of these is an example of CSS styling method",
+        answer: "inline-style",
+        options: [
+          "interior-style",
+          "exterior-style",
+          "offline-style",
+          "inline-style",
+    ]
+    },
+
+    {
+        numb: 19,
+        question: "Select the odd one amongst the option",
+        answer: "canva",
+        options: [
+          "bootstrap",
+          "tailwind",
+          "canva",
+          "react.js",
+    ]
+    },
+
+    {
+        numb: 20,
+        question: "One who codes the UX of a web page is called",
+        answer: "Frontend",
+        options: [
+          "Frontend",
+          "Backend",
+          "Fullstack",
+          "devOps",
+    ]
+    },
+    
 
 ];

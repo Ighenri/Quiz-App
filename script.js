@@ -146,16 +146,16 @@ function showResultBox(){
     quiz_box.classList.remove("activeQuiz"); // hide the quiz box
     result_box.classList.add("activeResult"); //show the result box
     const scoreText = result_box.querySelector(".score-text");
-    if(userScore > 12){
-        let scoreTag = '<span>congrats darling! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    if(userScore > 15){
+        let scoreTag = '<span>Congrats 💚 You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
-    else if(userScore > 5){
-        let scoreTag = '<span>and nice,You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    else if(userScore > 7){
+        let scoreTag = '<span>🤪 You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
      else {
-        let scoreTag = '<span>ouch dear!,You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>Ouch 🙈 You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 }

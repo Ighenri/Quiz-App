@@ -225,7 +225,7 @@ section .option-list .option{
 }
 
 section .option-list .option:hover{
-    background-color: rgb(245, 202, 202);
+    background-color: rgb(243, 227, 227);
     border-color: rgb(233, 212, 212);
 }
 
@@ -310,7 +310,7 @@ footer .next-btn{
 }
 
 footer .next-btn:hover{
-    background: rgb(219, 164, 164);
+    background: rgb(235, 212, 212);
 }
 
 .result-box{
