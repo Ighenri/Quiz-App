@@ -45,7 +45,5 @@ Projectlink: https://ighenri.github.io/Quiz-App/
 
 
 ### Acknowledgement 
-* [twitter](https://twitter.com/jolah99)
-* [twitter](https://twitter.com/Web3Bridge)
 
-I want to acknowledge https://twitter.com/Web3Bridge  for hosting this cohort and also to behttps://twitter.com/jolah9. She has been the best tutor to us.
+I want to acknowledge [web3bridge](https://twitter.com/Web3Bridge) for hosting this cohort and also to be [Jola](https://twitter.com/jolah99). She has been the best tutor to us.
