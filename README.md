@@ -26,7 +26,7 @@
 
 ## Developer Quiz Application
 
-This is an application that test developers of their proper understanding on web development and their syntaxes
+This is an application that tests developers of their proper understanding on web development and their respective syntaxes
 
 When no answer is supplied by the player, the correct word is displayed
 
@@ -46,4 +46,4 @@ Projectlink: https://ighenri.github.io/Quiz-App/
 
 ### Acknowledgement 
 
-I want to acknowledge [web3bridge](https://twitter.com/Web3Bridge) for hosting this cohort and also to be [Jola](https://twitter.com/jolah99). She has been the best tutor to us.
+I want to acknowledge [web3bridge](https://twitter.com/Web3Bridge) for hosting this cohort and also to my mentor [Jola](https://twitter.com/jolah99). She has been the best tutor to us. I really appreciate you guys 💝
