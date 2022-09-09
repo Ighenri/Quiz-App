@@ -394,15 +394,7 @@ footer .next-btn:hover{
     font-size: 14px;
 }
 
-@media screen and (max-width:375px) {
-    .start-btn,
-    .info-box,
-    .quiz-box,
-    .result-box{
-        display: flex;
-        flex-direction: column;
-     
-    }
+@media screen and (max-width:550px) {
     .start-btn button{
         padding: 7px 10px;
     }
@@ -411,7 +403,7 @@ footer .next-btn:hover{
        display: flex;
        flex-direction: column;
        width: 370px;
-       height: 70vh;
+       height: 80vh;
     }
     .info-box .info-title{
         height: 60px;
@@ -436,8 +428,10 @@ footer .next-btn:hover{
     .result-box{
         width: 370px;
     }
-    .time-line{
-        width: 370px;
+
+    .quiz-box header .time-line{
+        width: 50%;
+    
     }
 
 
