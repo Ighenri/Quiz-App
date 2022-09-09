@@ -393,3 +393,59 @@ footer .next-btn:hover{
     font-weight: 600;
     font-size: 14px;
 }
+
+@media screen and (max-width:390px) {
+    .start-btn,
+    .info-box,
+    .quiz-box,
+    .result-box{
+        display: flex;
+        flex-direction: column;
+     
+    }
+    .start-btn button{
+        padding: 7px 10px;
+    }
+
+    .info-box{
+       display: flex;
+       flex-direction: column;
+       width: 380px;
+       height: 70vh;
+    }
+    .info-box .info-title{
+        height: 60px;
+        padding: 0px 30px;
+        text-align: center;
+    }
+    .info-box .info-list{
+        height: auto;
+    }
+
+    .quiz-box{
+        width: 380px;
+        
+    }
+
+    .quiz-box header .title{
+        font-size: 16px;
+    }
+    .quiz-box header .timer{
+        width: 190px;
+    }
+    .result-box{
+        width: 380px;
+    }
+    .time-line{
+        width: 380px;
+    }
+
+
+
+
+
+
+
+
+
+}
