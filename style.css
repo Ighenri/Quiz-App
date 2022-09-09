@@ -23,7 +23,8 @@ body{
 }
 
 .info-box.activeInfo,
-.quiz-box.activeQuiz{
+.quiz-box.activeQuiz,
+.result-box.activeResult{
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -163,6 +164,7 @@ body{
     border: 1px solid rgb(219, 164, 164);
     border-radius: 5px;
     padding: 0 8px;
+ 
 }
 
 .quiz-box header .timer .time-text{
@@ -174,15 +176,23 @@ body{
 .quiz-box header .timer .time-sec{
     font-size: 20px;
     font-weight: 600;
-    background: brown;
+    background: rgb(41, 13, 13);
     height: 30px;
-    width: 40px;
+    width: 45px;
     text-align: center;
     color: white;
     border-radius: 5px;
     line-height: 30px;
-    border: 1px solid brown;
+    border: 1px solid rgb(19, 18, 18);
     user-select: none;
+}
+.quiz-box header .time-line{
+    position: absolute;
+    bottom: 0px;
+    height: 4px;
+    left: 0px;
+    background:black
+
 }
 
 .quiz-box section{
@@ -285,6 +295,7 @@ footer .total-que span p{
 }
 
 footer .next-btn{
+    display: none;
     height: 40px;
     padding: 0px 10px;
     font-size: 18px;
