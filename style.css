@@ -394,7 +394,7 @@ footer .next-btn:hover{
     font-size: 14px;
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:375px) {
     .start-btn,
     .info-box,
     .quiz-box,
@@ -410,7 +410,7 @@ footer .next-btn:hover{
     .info-box{
        display: flex;
        flex-direction: column;
-       width: 380px;
+       width: 370px;
        height: 70vh;
     }
     .info-box .info-title{
@@ -423,7 +423,7 @@ footer .next-btn:hover{
     }
 
     .quiz-box{
-        width: 380px;
+        width: 370px;
         
     }
 
@@ -434,10 +434,10 @@ footer .next-btn:hover{
         width: 190px;
     }
     .result-box{
-        width: 380px;
+        width: 370px;
     }
     .time-line{
-        width: 380px;
+        width: 370px;
     }
 
 
