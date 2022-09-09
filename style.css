@@ -394,7 +394,8 @@ footer .next-btn:hover{
     font-size: 14px;
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:450px) {
+
     .start-btn button{
         padding: 7px 10px;
     }
@@ -430,7 +431,7 @@ footer .next-btn:hover{
     }
 
     .quiz-box header .time-line{
-        width: 50%;
+      outline-width: 100px;
     
     }
 
