@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(187, 117, 117);
+   
+}
+
+.start-btn,
+.info-box,
+.quiz-box,
+.result-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease;
+}
+
+.info-box.activeInfo,
+.quiz-box.activeQuiz,
+.result-box.activeResult{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* start quiz button styling */
+.start-btn button{ 
+    padding: 10px 30px;
+    color: rgb(187, 117, 117);
+    font-size: 25px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+
+}
+/* styling info box */
+.info-box{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: white;
+    width: 540px;
+    border-radius: 5px;
+}
+.info-box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+.info-box .info-list{
+    height: 200px;
+    width: 100%;
+    padding: 15px 35px;
+    
+}
+.info-box .info-list .info{
+  margin: 5px 0px;
+
+}
+
+.info-box .info-list .info span{
+    font-weight: bold;
+    color:red
+}
+
+.info-box .buttons{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 35px;
+    border-top: 1px solid lightgray;
+
+
+    
+}
+.info-box .buttons button{
+    margin: 0px 5px;
+    height: 40px;
+    width: 100px;
+    outline: none;
+    /* background:  rgb(187, 117, 117); */
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+   
+}
+
+.buttons button.exit{ 
+    color:  rgb(187, 117, 117);
+    
+}
+
+.buttons button.exit:hover{
+    background-color: rgb(187, 117, 117);
+    color: white;
+}
+ 
+.buttons button.continue{
+    background-color:  rgb(187, 117, 117);
+    color: white; 
+    
+}
+
+.buttons button.continue:hover{
+ background: rgb(187, 117, 117);
+}
+
+.quiz-box{
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    background: white;
+    width: 550px;
+    border-radius: 5px;
+   
+}
+
+.quiz-box header{
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0px 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.quiz-box header .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz-box header .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 145px;
+    height: 45px;
+    background: rgb(219, 164, 164);
+    border: 1px solid rgb(219, 164, 164);
+    border-radius: 5px;
+    padding: 0 8px;
+ 
+}
+
+.quiz-box header .timer .time-text{
+    font-weight: 600;
+    font-size: 17px;
+    user-select: none;
+}
+
+.quiz-box header .timer .time-sec{
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(41, 13, 13);
+    height: 30px;
+    width: 45px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    line-height: 30px;
+    border: 1px solid rgb(19, 18, 18);
+    user-select: none;
+}
+.quiz-box header .time-line{
+    position: absolute;
+    bottom: 0px;
+    height: 4px;
+    left: 0px;
+    background:red;
+
+}
+
+.quiz-box section{
+    padding: 25px 30px 20px 30px;
+    background: white;
+} 
+
+.quiz-box section .que-text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.quiz-box section .option-list{
+    padding: 20px 0px;
+    display: block;
+}
+
+section .option-list .option{
+    background: rgb(247, 244, 244);
+    border: 1px solid rgb(219, 164, 164);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section .option-list .option:hover{
+    background-color: rgb(243, 227, 227);
+    border-color: rgb(233, 212, 212);
+}
+
+.option-list .option:last-child{
+    margin-bottom: 0px;
+}
+
+.option-list .option .icon{
+    height: 20px;
+    width: 20px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    pointer-events: none;
+    font-size: 13px;
+}
+
+.option-list .option .icon.tick{
+   border-color:  rgb(84, 173, 84);
+   color: rgb(84, 173, 84);
+   background: white;
+}
+
+.option-list .option .icon.xmark{
+    border-color: rgb(151, 44, 44);
+    color: rgb(151, 44, 44);
+    background: white;
+}
+
+.option-list .option.correct{
+    border-color:  rgb(84, 173, 84);
+   color: rgb(84, 173, 84);
+   background: rgb(133, 211, 133);
+}
+
+.option-list .option.incorrect{
+    border-color: rgb(151, 44, 44);
+    color: rgb(131, 8, 8);
+    background: rgb(189, 78, 78);
+}
+.option-list .option.disabled{
+    pointer-events: none;
+}
+
+.quiz-box footer{
+    height: 60px ;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz-box footer .total-que span{
+    display: flex;
+    user-select: none;
+}
+
+footer .total-que span p{
+    font-weight: 600;
+    padding: 0 5px;
+} 
+
+.total-que span p:first-child{
+    padding-left: 0px;
+}
+
+footer .next-btn{
+    display: none;
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background: rgb(219, 164, 164);
+    border-radius: 5px;
+    border:  1px solid rgb(219, 164, 164);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer .next-btn:hover{
+    background: rgb(235, 212, 212);
+}
+
+.result-box{
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px 30px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+
+}
+
+.result-box .icon{
+    font-size: 100px;
+    color:rgb(180, 132, 132);
+    margin-bottom: 10px;
+}
+
+
+.result-box .complete-text{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.result-box .score-text{
+    font-size: 20px;
+    font-weight: 500
+}
+
+.result-box .score-text span{
+    display: flex;
+   font-size: 18px;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.score-text span p{
+    padding: 0px 4px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.result-box .buttons{
+    display: flex;
+    margin: 20px 0px;
+ 
+
+}
+
+.result-box .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid rgb(219, 164, 164);
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  all 0.3 ease;
+}
+
+.result-box .buttons .restart{
+    background:  rgb(219, 164, 164);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+
+.result-box .buttons .quit{
+    color:  rgb(219, 164, 164);
+    background: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media screen and (max-width:450px) {
+
+    .start-btn button{
+        padding: 7px 10px;
+    }
+
+    .info-box{
+       display: flex;
+       flex-direction: column;
+       width: 370px;
+       height: 80vh;
+    }
+    .info-box .info-title{
+        height: 60px;
+        padding: 0px 30px;
+        text-align: center;
+    }
+    .info-box .info-list{
+        height: auto;
+    }
+
+    .quiz-box{
+        width: 370px;
+        
+    }
+
+    .quiz-box header .title{
+        font-size: 16px;
+    }
+    .quiz-box header .timer{
+        width: 190px;
+    }
+    .result-box{
+        width: 370px;
+    }
+
+  /*   .quiz-box header .time-line{
+      width: 100px;
+    
+    } */
+
+
+
+
+
+
+
+
+
+}
